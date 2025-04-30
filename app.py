@@ -9,12 +9,12 @@ import io
 from datetime import datetime
 
 app = Flask(__name__)
-app.secret_key = 'selfish@2006'
+app.secret_key = ' your password'
 
 # MySQL Config
 app.config['MYSQL_HOST'] = 'localhost'
 app.config['MYSQL_USER'] = 'root'
-app.config['MYSQL_PASSWORD'] = 'selfish@2006'
+app.config['MYSQL_PASSWORD'] = ' your password'
 app.config['MYSQL_DB'] = 'employee_db'
 
 mysql = MySQL(app)
